@@ -1,0 +1,139 @@
+/**
+ * ----------------------------------------
+ * animation scale-up-hor-left
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+@keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation floatBubble
+ * ----------------------------------------
+ */
+
+@keyframes floatBubble-in {
+  0% {
+      bottom:0px;
+  }
+  100% {
+      bottom: 5px;
+  }
+}
+
+@keyframes floatBubble-out {
+  0% {
+      bottom:5px;
+  }
+  100% {
+      bottom: 0px;
+  }
+}
+
+/* ----------------------------------------*/
+$scale-up-animation: scale-up-hor-left 0.5s cubic-bezier(0.39, 0.575, 0.565, 1)
+  both;
+
+$fade-in-animation-nav: fade-in 3.1s;
+
+$fade-in-animation-hero-h2: fade-in 1.5s;
+
+$fade-in-animation-hero-h1: 1s ease-in fade-in;
+
+$slide-bottom-animation: 1.5s 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+  slide-in-bottom;
+
+$slide-bottom-animation:1.5s 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+slide-in-bottom-btn;
+
+$slide-in-left-animation-sidebar: slide-in-left .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;;

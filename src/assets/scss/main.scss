@@ -1,0 +1,16 @@
+
+//base files
+@use './base/base';
+
+//layout files
+@use './layout/layout';
+
+//components files
+@use './components/components';
+
+//animation
+@use './abstracts/animations';
+
+//pages
+@use './pages/home';
+@use './pages/project-details'

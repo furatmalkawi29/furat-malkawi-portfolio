@@ -1,0 +1,59 @@
+@use "../abstracts/abstracts" as *;
+
+.hero-background-shape {
+  display: flex;
+  z-index: -10;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+
+  div {
+    position: absolute;
+    width: 99.5vh;
+    height: 99.5vh;
+    border: $shape-border;
+  }
+
+  .circle {
+    border-radius: 50%;
+  }
+
+  .square {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .rect-horizontal {
+    height: 50vh;
+    border: none;
+    border-bottom: $shape-border;
+  }
+
+  .rect-vertical {
+    width: 0vh;
+    border: none;
+    border-left: $shape-border;
+  }
+}
+
+body {
+  background-color: $primary-color;
+}
+
+
+
+@media screen and (max-width: 768px){
+  .hero-background-shape {
+    height: 90vh;
+    align-items: center;
+
+    div{
+      width:100vw;
+      height: 100vw;
+    }
+    
+    .rect-horizontal {
+      height: 0vw;
+  }
+}
+}

@@ -1,0 +1,110 @@
+@use "../abstracts/abstracts" as *;
+@use "../base/typography" as *;
+    
+    .project-card{
+      display: grid;
+      grid-template-columns:32% 65%;
+      column-gap: 30px;
+      padding: 20px 0;
+      padding-right:10px;
+      font-family: $lato-font-family;
+
+      img{
+        width: fit-content;
+      }
+
+      .card-info{
+        h1{
+          font-size: 45px;
+          font-weight: 700;
+          line-height: 54px;
+          margin-bottom: 40px;
+        }
+        
+        h2{
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 1.6em;
+          margin-top: 40px;
+          margin-bottom: 30px;
+          padding-right: 10%;              
+        }
+
+        .separation-line{
+          height: 3px;
+          width: 100px;
+          background-color: black;
+        }
+
+        .view-button{
+          display: flex;
+          justify-content: space-between;
+          align-items: end;
+          width: 144px;
+       
+          
+          p{
+            font-size: 19px;
+            font-weight: 700;
+            padding-bottom: 6px;
+            transition: color ease-in .4s, padding  ease-in .3s;   
+          }
+
+          
+          :nth-child(2){
+            font-size: 30px;
+            stroke-width:.8;
+          }
+        }
+        
+        svg{
+          position: relative;
+          bottom:0;
+          transition: bottom .2s ease;
+        }
+
+        .text-in{
+          color:$dark-gray;
+          p{
+            padding-bottom: 5px;
+          }
+
+          transition: color ease-in .2s, padding  ease-in .3s;
+        }
+
+        .text-out{
+          color:black;
+          p{
+            padding-bottom: 6px;
+          }
+          transition: color ease-in .2s, padding  ease-in .3s;
+        }
+
+        .icon-out{
+          bottom: 0px;
+          transition: bottom .4s ease;
+        }
+
+        
+        .icon-in{
+          bottom: 5px;
+          transition: bottom .4s ease;
+                }
+      }
+
+
+      img{
+        max-width: 98%;
+        margin: auto;
+        margin-top: 28%;
+        cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto;
+        cursor: url("../../images/arr.png"), auto;
+        transition: opacity .7s, transform .2s;
+      }
+
+      img:hover{
+        opacity: .7;
+        transition: opacity .7s;
+      }
+
+    }

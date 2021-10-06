@@ -1,0 +1,124 @@
+@use "../abstracts/abstracts" as *;
+@use "../base/typography" as *;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 3%;
+  font-family: $inter-font-family;
+  font-weight: 500;
+  font-size: 13.5px;
+  text-transform: uppercase;
+  animation: $fade-in-animation-nav;
+
+  .menu-list-container {
+    display: flex;
+    align-items: center;
+
+    .menu-list {
+      display: flex;
+
+      div :first-child {
+        margin-right: 40px;
+        transition: color .3s;
+        padding: 8px 0px;
+      }
+    }
+
+    img {
+      width: 6%;
+      padding-right: 30px;
+      opacity: 0.85;
+    }
+  }
+
+  .hover-line, .btn-line {
+    visibility: hidden;
+    height: 2.2px;
+    margin-right: 40px;
+    background-color: $hover-text-color;
+  }
+
+  .btn-line{
+    margin: 0;
+    }
+
+  .linkedin-icon{
+    font-size:17px;
+  }
+
+  .menu-btn{
+    transition: color .3s;
+    animation: $fade-in-animation-nav;
+
+    :first-child{
+      padding: 8px 0px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+
+}
+
+
+
+/*mixin*/
+nav .menu-list div:hover {
+  color: $hover-text-color;
+
+  .hover-line{
+    visibility: initial;
+    -webkit-animation: $scale-up-animation;
+    animation: $scale-up-animation;
+  }
+}
+
+
+nav .menu-btn:hover{
+  .btn-line{
+    visibility: initial;
+    -webkit-animation: $scale-up-animation;
+    animation: $scale-up-animation;
+  }
+}
+
+nav .menu-list-container img:hover{
+  opacity: .5;
+  transition: opacity .3s;
+}
+
+
+
+
+/*media queries*/
+@media (min-width:992px) {
+  .menu-btn{
+    display: none;
+  }
+}
+
+
+@media (max-width:991px) {
+  .menu-list div{
+    display: none;
+  }
+  .hero h2{
+    animation: $fade-in-animation-nav;
+  }
+
+  nav .menu-list-container img{
+    width: 22%;
+    animation: $fade-in-animation-nav;
+  }
+
+  .linkedin-icon{
+    display: none;
+  }
+
+  .menu-list{
+    display: block;
+    animation: $fade-in-animation-nav;
+  }
+
+}
