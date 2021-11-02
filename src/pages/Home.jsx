@@ -28,7 +28,9 @@ export default function Home() {
       <Hero />
       <section className="home-projects">
         <SideBar text="Latest Projects" />
-
+        <h1 className="text-container-mobile">
+          Last Projects
+      </h1>
         <section className="projects-container">
           <Card id='scroll-to' />
           <Card id='scroll-to2'/>

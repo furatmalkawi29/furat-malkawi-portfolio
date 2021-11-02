@@ -17,9 +17,7 @@ export default function Card(props) {
     setBtnColorClass("text-out");
   }
 
-
   $(window).on("scroll", function () {
-
     var hT = $(`.${props.id}`).offset().top,
       hH = $(`.${props.id}`).outerHeight(),
       hT2 = $(`.info-${props.id}`).offset().top,
@@ -27,20 +25,31 @@ export default function Card(props) {
       wH = $(window).height(),
       wS = $(this).scrollTop();
 
-      //project image
-    if (wS > hT - wH && !(wS > hT + hH)) {
-        $(`.${props.id}`).css(
-          "transform",
-          `scale3d(${1 + (hT + hH - wS) / 12000},${1 + (hT + hH - wS) / 20000},1)`
-        );
+    //project image
+    if (wS > hT - wH && !(wS > hT + hH)&&window.innerWidth>631) {
+      $(`.${props.id}`).css(
+        "transform",
+        `scale3d(${1 + (hT + hH - wS) / 12000},${1 + (hT + hH - wS) / 12000},1)`
+      );
+    } else if (wS > hT - wH && !(wS > hT + hH)&&window.innerWidth<=631){
+      $(`.${props.id}`).css(
+        "transform",
+        `scale3d(${1 + (hT + hH - wS) / 4000},${1 + (hT + hH - wS) / 4000},1)`
+      );
     }
 
     //project card info
-    if (wS > hT2 - wH && !(wS > hT2 + hH2)) {
-    $(`.info-${props.id}`).css(
-      "transform",
-      `translate3d(0px,${(hT + hH - wS)/4}px,0px)`
-    );
+    //window.innerWidth --> to detect mobile screen size
+    if (wS > hT2 - wH && !(wS > hT2 + hH2) &&window.innerWidth>631) {
+      $(`.info-${props.id}`).css(
+        "transform",
+        `translate3d(0px,${(hT + hH - wS) / 4}px,0px)`
+      );
+    }else if (wS > hT2 - wH && !(wS > hT2 + hH2) &&window.innerWidth<=631){
+      $(`.info-${props.id}`).css(
+        "transform",
+        `translate3d(0px,${(hT + hH - wS) / 10}px,0px)`
+      );
     }
   });
 
@@ -49,7 +58,7 @@ export default function Card(props) {
     <section className={`project-card`}>
       <div className={`card-info info-${props.id}`}>
         <h1>Making meaningful connections on LinkedIn</h1>
-        <div className="separation-line"></div>
+        <div className="separation-line"/>
         <h2>
           Improving the networking feature set on LinkedIn by promoting
           meaningful professional connections and mentorship opportunities.
@@ -70,6 +79,10 @@ export default function Card(props) {
           "https://uploads-ssl.webflow.com/5f3591563107295bd1f3022c/5fb56f1b4b67c1af051d5df2_smartmockups_khnrs7yp.png"
         }
       />
+      <div className="mobile-separation-line"/>
+       <h1 className="mobile-only-heading">
+        Making meaningful connections on LinkedIn
+      </h1>
     </section>
   );
 }

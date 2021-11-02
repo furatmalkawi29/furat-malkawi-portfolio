@@ -6,10 +6,12 @@ import ProjectDetails from "../pages/ProjectDetails";
 export default function Main() {
   return (
     <main>
-      <Switch>
+      {/* <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/projects/:projectName" component={ProjectDetails}/>
-      </Switch>
+      </Switch> */}
+      {/* <ProjectDetails/> */}
+      <Home/>
     </main>
   );
 }

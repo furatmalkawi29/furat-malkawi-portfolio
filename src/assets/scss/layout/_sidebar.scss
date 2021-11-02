@@ -1,8 +1,8 @@
 @use "../abstracts/abstracts" as *;
 @use "../base/typography" as *;
 
-aside {
-  font-size: 62px;
+.vertical-aside {
+  font-size: 65px;
   font-family: $lato-font-family;
   font-weight: 600;
   letter-spacing: -1px;
@@ -29,7 +29,7 @@ aside {
 
 //medium screens
 @media (max-width: 991px) {
-  aside .sticky-text-container, aside .text-container {
+  .vertical-aside .sticky-text-container, .vertical-aside .text-container {
     margin: 0;
   }
 }
@@ -41,22 +41,26 @@ aside {
 }
 
 @media (max-width: 767px) {
-  aside .sticky-text-container, aside .text-container{
+  .vertical-aside{
     display: none;
   }
+
   .text-container-mobile{
     display: block;
-  }
-  aside{
-    padding: 0% 7.2%;
+    font-size: 15vw;
+  font-family: $lato-font-family;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: $light-gray;
+  padding-left: 1em;
+  margin-bottom: 16vh;
   }
 }
 
-//small screens
 @media (max-width: 631px) {
   .text-container-mobile{
-    display: block;
-    font-size: 12vw;
+text-align: center;
+padding-left: 0;
   }
-  
 }
+

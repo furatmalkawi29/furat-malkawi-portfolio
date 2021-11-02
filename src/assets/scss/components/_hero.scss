@@ -2,7 +2,8 @@
 @use "../base/typography" as *;
 
 .hero-section {
-  padding: 3.4% 7.2%;
+  padding: 5.5% 3.5em;
+  padding-bottom: 0px;
   
   h1 {
     font-family: $inter-font-family;
@@ -40,7 +41,7 @@
     animation: $slide-bottom-animation;
   }
 }
-@media (min-width: 1019px) {
+@media (min-width: 1024px) {
   .md-screen-heading {
     display: none;
   }
@@ -52,7 +53,7 @@
 }
 
 //----------------mid screen heading
-@media (max-width: 1019px) {
+@media (max-width: 1024px) {
   .lg-screen-heading {
     display: none;
   }
@@ -64,6 +65,7 @@
   .hero-section h2{
     font-size: 2.25em;
     width:70%;
+    padding-bottom: 15%;
   }
 }
 
@@ -80,20 +82,20 @@
   }
 
   .hero-section{
-    padding: 11% 7.2%;
+    padding: 8vh 6.5%;
+    padding-right: 9%;
   }
 
   .sm-screen-heading {
     width: 100%;
-    text-align: center;
     font-size: 11.5vw;
     line-height: 1em;
     animation: $fade-in-animation-hero-h2;
   }
 
   .hero-section h2{
-    text-align: center;
-    font-size: 6.8vw;
-    width:100%;
+    font-size: 6.5vw;
+    margin-top: 30px;
+    width:102%;
   }
 }

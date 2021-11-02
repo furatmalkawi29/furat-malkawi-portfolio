@@ -2,8 +2,10 @@
 
   .projects-container {
     display: grid;
-    row-gap: 150px;
+    margin-bottom: 15%;
 }
+
+
 
 
 //----------------mid screen
@@ -26,20 +28,30 @@
 
 
 //home projects
-@media (min-width: 768px) {
+@media (max-width: 991px) {
   .home-projects {
     display: grid;
-    grid-template-columns: 17% auto;
+    grid-template-columns: 12% auto;
+  }  
+}
+
+@media (min-width: 992px) {
+  .home-projects {
+    display: grid;
+    grid-template-columns: 20% auto;
     grid-column-gap: 50px;
   }
 }
 
 @media (max-width: 767px) {
+  .projects-container {
+    padding-left:5vw;
+  }
+  
   .home-projects {
     display: grid;
-    grid-template-rows: 80px auto;
+    grid-template-columns: auto;
   }
-
 
 }
 
@@ -48,5 +60,19 @@
   .home-page {
     grid-template-rows: 90vh auto;
     padding: 10% 3%;
+  }
+}
+
+
+@media (max-width: 631px) {
+  .projects-container {
+    row-gap: 150px;
+  }
+}
+
+
+@media (min-width: 632px) {
+  .projects-container {
+    row-gap: 100px;
   }
 }
