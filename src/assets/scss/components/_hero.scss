@@ -36,9 +36,7 @@
 //----------------large screen heading
 @media (max-width: 1139px) {
   .lg-screen-heading {
-    font-size: 4em;
-    animation: $fade-in-animation-hero-h1;
-    animation: $slide-bottom-animation;
+    font-size: 4em;    
   }
 }
 @media (min-width: 1024px) {
@@ -90,7 +88,6 @@
     width: 100%;
     font-size: 11.5vw;
     line-height: 1em;
-    animation: $fade-in-animation-hero-h2;
   }
 
   .hero-section h2{

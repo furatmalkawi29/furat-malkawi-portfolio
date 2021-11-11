@@ -10,8 +10,8 @@ export default function Main() {
         <Route exact path="/" component={Home}/>
         <Route path="/projects/:projectName" component={ProjectDetails}/>
       </Switch> */}
-      {/* <ProjectDetails/> */}
-      <Home/>
+      <ProjectDetails/>
+      {/* <Home/> */}
     </main>
   );
 }

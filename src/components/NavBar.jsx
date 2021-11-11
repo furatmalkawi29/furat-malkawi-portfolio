@@ -6,30 +6,30 @@ export default function NavBar() {
   return (
     <nav>
       <div className="menu-list-container">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className="nav-item"/>
 
         <div className="menu-list">
           <div>
-            <div>Home</div>
+            <div className="nav-item">Home</div>
             <div className="hover-line" />
           </div>
           <div>
-            <div>Projects</div>
+            <div className="nav-item">Projects</div>
             <div className="hover-line" />
           </div>
           <div>
-            <div>About</div>
+            <div className="nav-item">About</div>
             <div className="hover-line" />
           </div>
           <div>
-            <div>Resume</div>
+            <div className="nav-item">Resume</div>
             <div className="hover-line" />
           </div>
         </div>
       </div>
-      <FaLinkedinIn className="linkedin-icon" />
+      <FaLinkedinIn className="linkedin-icon nav-item" />
       <div className="menu-btn">
-        <div>MENU</div>
+        <div className="nav-item">MENU</div>
         <div className="btn-line" />
       </div>
     </nav>

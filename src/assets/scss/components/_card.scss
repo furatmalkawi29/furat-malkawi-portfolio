@@ -11,6 +11,8 @@
           font-weight: 700;
           line-height: 54px;
           margin-bottom: 40px;
+          animation: $slide-in-top;
+          -webkit-animation: $slide-in-top;
         }
         
         h2{
