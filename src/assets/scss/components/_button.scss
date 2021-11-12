@@ -1,0 +1,59 @@
+@use "../abstracts/abstracts" as *;
+@use "../base/typography" as *;
+
+.view-button{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-family: $lato-font-family;
+  width: fit-content;
+cursor: pointer;
+  
+  p{
+    position: relative;
+    font-size: 19px;
+    font-weight: 700;
+    padding-bottom: 6px;
+    transition: ease-in .3s;   
+  }
+
+  
+  :nth-child(2){
+    font-size: 30px;
+    stroke-width:.8;
+  }
+
+  svg{
+    position: relative;
+  }
+
+}
+
+
+.text-in{
+  color:$dark-gray;
+  p{
+    padding-bottom: 4px;
+  }
+
+  transition: color ease-in .2s, padding  ease-in .3s;
+}
+
+.text-out{
+  color:black;
+  p{
+    padding-bottom: 6px;
+  }
+  transition: color ease-in .2s, padding  ease-in .3s;
+}
+
+.icon-out{
+  bottom: 0px;
+  transition: bottom .4s ease;
+}
+
+
+.icon-in{
+  bottom: 5px;
+  transition: .4s ease;
+        }

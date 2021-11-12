@@ -6,6 +6,7 @@
   justify-content: center;
   position: fixed;
   width: 100vw;
+  animation: $fade-in-animation-nav;
 
   div {
     position: absolute;

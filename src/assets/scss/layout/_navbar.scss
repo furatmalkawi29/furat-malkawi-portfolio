@@ -59,6 +59,11 @@ nav {
     }
   }
 
+  a{
+    text-decoration: none;
+    color: initial;
+  }
+
 }
 
 
@@ -87,6 +92,13 @@ nav .menu-list-container img:hover{
   opacity: .5;
   transition: opacity .3s;
 }
+
+
+.nav-item{
+  cursor: pointer;
+}
+
+
 
 
 

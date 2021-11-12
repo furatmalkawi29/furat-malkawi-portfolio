@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Card from "../components/Card";
 import Hero from "../components/Hero";
 import SideBar from "../components/SideBar";
+import ArrowUp from "../components/ArrowUp";
 
 export default function Home() {
   useEffect(() => {
@@ -23,6 +24,8 @@ export default function Home() {
     }
   }
 
+
+
   return (
     <div className="home-page">
       <Hero />
@@ -31,14 +34,17 @@ export default function Home() {
         <h1 className="text-container-mobile">
           Last Projects
       </h1>
-        <section className="projects-container">
+        <section id="projects-container" className="projects-container">
           <Card id='scroll-to' />
           <Card id='scroll-to2'/>
           <Card id='scroll-to3'/>
           <Card id='scroll-to4'/>
           <Card id='scroll-to5'/>
         </section>
+
       </section>
+
+      <ArrowUp showArrowAt="#info-scroll-to"/>
     </div>
   );
 }

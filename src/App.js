@@ -1,5 +1,6 @@
 import React from "react";
 import './assets/scss/main.scss';
+import './app.css';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import BackgroundShape from "./components/BackgroundShape";

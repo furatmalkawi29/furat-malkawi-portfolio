@@ -1,8 +1,9 @@
 import React from "react";
+import arrowDown from '../assets/images/down-arrow.png'
 
 export default function Hero() {
   return (
-    <section className="hero-section">
+    <section id="hero" className="hero-section">
       <h1 className="lg-screen-heading">
         <pre>Hello, I'm Furat, {"\n"}a front-end developer.</pre>
       </h1>
@@ -21,6 +22,9 @@ export default function Hero() {
         I build interactive and efficient web solutions, using a
         good base of <span>analytical thinking</span> and <span>strong attention</span> to detail.
       </h2>
-    </section>
+      
+      <a id="arrow-down" href="#projects-container"><img className="arrow-down" src={arrowDown}/></a>
+
+      </section>
   );
 }

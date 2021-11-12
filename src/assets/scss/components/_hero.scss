@@ -96,3 +96,17 @@
     width:102%;
   }
 }
+
+
+.arrow-down{
+  display: block;
+  width:35px;
+  margin: auto;
+  margin-top: 70px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.arrow-down:hover {
+  opacity: .8;
+}

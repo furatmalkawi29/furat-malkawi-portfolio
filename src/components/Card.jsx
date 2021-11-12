@@ -1,21 +1,9 @@
 import React, { useState } from "react";
-import { FiArrowUpRight } from "react-icons/fi";
 import $ from "jquery";
+import ButtonView from "./ButtonView";
 
 export default function Card(props) {
-  const [animationClass, setAnimationClass] = useState("");
-  const [btnColorClass, setBtnColorClass] = useState("");
 
-  function enterHandle() {
-    console.log("enter");
-    setAnimationClass("icon-in");
-    setBtnColorClass("text-in");
-  }
-  function leaveHandle() {
-    console.log("leave");
-    setAnimationClass("icon-out");
-    setBtnColorClass("text-out");
-  }
 
   $(window).on("scroll", function () {
     var hT = $(`.${props.id}`).offset().top,
@@ -55,7 +43,7 @@ export default function Card(props) {
 
 
   return (
-    <section className={`project-card`}>
+    <section id={`info-${props.id}`} className={`project-card`}>
       <div className={`card-info info-${props.id}`}>
         <h1>Making meaningful connections on LinkedIn</h1>
         <div className="separation-line"/>
@@ -63,14 +51,7 @@ export default function Card(props) {
           Improving the networking feature set on LinkedIn by promoting
           meaningful professional connections and mentorship opportunities.
         </h2>
-        <div
-          className={`view-button ${btnColorClass}`}
-          onMouseEnter={enterHandle}
-          onMouseLeave={leaveHandle}
-        >
-          <p>View Project</p>
-          <FiArrowUpRight className={animationClass} viewBox="0 0 20 20" />
-        </div>
+        <ButtonView buttonTxt="View Project"/>
       </div>
       <img
         className={props.id}
