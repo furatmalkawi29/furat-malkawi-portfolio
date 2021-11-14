@@ -30,7 +30,7 @@ export default function Home() {
     <div className="home-page">
       <Hero />
       <section className="home-projects">
-        <SideBar text="Latest Projects" />
+        <SideBar className="home-aside" text="Latest Projects" />
         <h1 className="text-container-mobile">
           Last Projects
       </h1>

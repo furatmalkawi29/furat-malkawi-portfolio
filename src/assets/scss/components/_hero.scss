@@ -19,19 +19,33 @@
     line-height: 1.15em;
     animation: $fade-in-animation-hero-h2;
   }
-
+  
   h2 span {
     font-weight: 400;
     font-style: italic;
     font-size: .9em;
   }
-
-
+  
+  
   .lg-screen-heading {
     font-size: 4.5em;
     line-height: 1.1em;
   }
 }
+
+.arrow-down{
+  display: block;
+  width:35px;
+  margin-left: 49.2%;
+  margin-top: 70px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.arrow-down:hover {
+  opacity: .8;
+}
+
 
 //----------------large screen heading
 @media (max-width: 1139px) {
@@ -97,16 +111,3 @@
   }
 }
 
-
-.arrow-down{
-  display: block;
-  width:35px;
-  margin: auto;
-  margin-top: 70px;
-  cursor: pointer;
-  transition: .3s;
-}
-
-.arrow-down:hover {
-  opacity: .8;
-}

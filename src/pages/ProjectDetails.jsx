@@ -17,11 +17,10 @@ export default function ProjectDetails() {
         <h1>Sphere</h1>
         <ButtonView marginValue="14px auto" buttonTxt="View Live Website"/>
         </div>
-        {/* <img alt="mockup" src={mockup}/> */}
-        <img className="video-frame" src={videoFrame}/>
-        <video loop="true" autoplay="autoplay" controls="controls"  muted>
-  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
-    </video>
+
+        <div>
+          <iframe src="//www.youtube.com/embed/f890SC1schE?autoplay=1&playlist=f890SC1schE&loop=1" allow="autoplay"/>
+        </div>
       </section>
 
       <section className="project-info-container home-projects">

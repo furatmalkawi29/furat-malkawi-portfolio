@@ -2,30 +2,33 @@
 @use "../base/typography" as *;
 
 .view-button{
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: end;
   font-family: $lato-font-family;
   width: fit-content;
-cursor: pointer;
+  cursor: pointer;
+  z-index: 5;
   
   p{
     position: relative;
-    font-size: 19px;
+    font-size: 1.3vw;
     font-weight: 700;
     padding-bottom: 6px;
     transition: ease-in .3s;   
   }
 
+  svg{
+    position: relative;
+    bottom: 5%;
+  }
   
   :nth-child(2){
-    font-size: 30px;
+    font-size: 2.15vw;
     stroke-width:.8;
   }
 
-  svg{
-    position: relative;
-  }
 
 }
 
@@ -48,12 +51,39 @@ cursor: pointer;
 }
 
 .icon-out{
-  bottom: 0px;
+  bottom: 2px !important;
   transition: bottom .4s ease;
 }
 
 
 .icon-in{
-  bottom: 5px;
+  bottom: 5px !important;
   transition: .4s ease;
         }
+
+
+
+
+  @media (max-width:991px){
+          .view-button{
+            p{
+              font-size: 1.78vw; 
+            }
+        
+            :nth-child(2){
+              font-size: 2.75vw;
+            }
+          }
+    }
+    
+@media (max-width:788px){
+  .view-button{
+    p{
+      font-size: 1.6vw; 
+    }
+
+    :nth-child(2){
+      font-size: 2.5vw;
+    }
+  }
+}

@@ -29,18 +29,21 @@
 
 //medium screens
 @media (max-width: 991px) {
-  .vertical-aside .sticky-text-container, .vertical-aside .text-container {
+  .vertical-aside .sticky-text-container, .vertical-aside {
+    margin: 0;
+  }
+  .home-aside .text-container {
     margin: 0;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .text-container-mobile{
     display: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .vertical-aside{
     display: none;
   }

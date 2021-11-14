@@ -3,25 +3,40 @@
 
 
 .project-details-hero{
+  position: relative;
   padding-bottom: 75px;
-  display: grid;
-  grid-template-columns: 40% 60%;
+  height: 85vh;
+
   h1{
-    font-size: 5em;
+    font-size: 6vw;
     font-family: $lato-font-family;
     font-weight: 600;
     text-align: center;
-    padding-top: 2.5%;
-    padding-bottom: 1%;
   }
-  
-  img{
-    display: block;
-    width: 43vw;
-    margin:0 auto;
+
+  iframe {
+    box-sizing: border-box;
+    background: url(../../images//laptop-with-blank-screen2.png) center center no-repeat;
+    background-size: contain;
+    padding: 19.1% 6.2% 20%;
+    position: absolute;
+    height: 65vw;
+    width: 55vw;
+    left: 22.5vw;
+    top:-7.6vw;
   }
 }
 
+
+
+.hero-text{
+}
+
+.video-frame{
+  position: absolute;
+  width: 55vw;
+  left: 22.5vw;
+}
 
 .project-info-container{
     display: grid;
@@ -119,65 +134,88 @@ img{
 }
 
 
-.demo-section{
-position: relative;
-font-family: $lato-font-family;
-margin-top: 40px;
-h2{
-    font-size: 3em;
-    font-weight: 600;
-    padding-top: 2.5%;
-    padding-bottom: 2%;
-    margin:auto;
-    width: fit-content;
-}
-
-
-video{
-display: block;
-width: 52%;
-margin: auto;
-margin-top:50px;
-position: absolute;
-left: 24vw;
-}
-
-}
-
-.video-frame{
-  position: absolute;
-  display: block;
-  width: 68%;
-  margin: auto;
-  left: 16vw;
-}
-
 .reflection-section{
-  margin-top: 39vw;
+  margin-top: 5em;
 }
+
+
+
+
+
+
+
 
 
 
 
 @media (max-width:991px) {
-  .project-details-heading {
+  .project-details-hero {
     h1{
-      font-size: 8vw;
-      padding-bottom: 5%;
-      padding-top: 5%;
+      font-size: 6.5vw;
     }
     
-    img {
-     width:75%; 
-    }
-
+  }
     .project-info-paragraphs{
       h3{
         font-size: 35px;
       }
     }
+
+    .project-details-hero{
+      iframe {
+      padding: 18% 8.2% 19.2%;
+      height: 70vw;
+      width: 70vw;
+      left: 15vw;
+      top: -5vw;
+  }
+
+  .project-info-container {
+      .text-container {
+      margin: 0 auto !important;
+    }
+  }
+}
+
+  .project-details-hero {
+    height: 50vw;  
+  }
+   
   
 }
+
+@media (max-width:768px){
+  .project-info-container{
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+
+  .project-info-paragraphs {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 45px;
+}
+
+.tools-container {
+  width: auto;
+}
+
+.wireframes-section {
+  margin-top: 4rem;
+}
+
+.project-details-hero {
+  height: 42vw;
+}
+
+.project-details-hero h1 {
+  font-size: 7.5vw;
+}
+
+}
+
+
 
 @media (max-width:526px){
   .project-details-heading {
@@ -191,5 +229,5 @@ left: 24vw;
      width:72%; 
     }
   }
-}
+
 }
