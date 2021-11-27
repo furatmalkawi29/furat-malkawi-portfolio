@@ -7,12 +7,10 @@ export default function ButtonView(props) {
   const [btnColorClass, setBtnColorClass] = useState("");
 
   function enterHandle() {
-    console.log("enter");
     setAnimationClass("icon-in");
     setBtnColorClass("text-in");
   }
   function leaveHandle() {
-    console.log("leave");
     setAnimationClass("icon-out");
     setBtnColorClass("text-out");
   }

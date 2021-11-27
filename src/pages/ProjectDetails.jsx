@@ -19,7 +19,7 @@ export default function ProjectDetails() {
         </div>
 
         <div>
-          <iframe src="//www.youtube.com/embed/f890SC1schE?autoplay=1&playlist=f890SC1schE&loop=1" allow="autoplay"/>
+          <iframe src="//www.youtube.com/embed/dXQ7IHkTiMM?autoplay=1&playlist=dXQ7IHkTiMM&loop=1&mute=1" allow="autoplay"/>
         </div>
       </section>
 

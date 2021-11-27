@@ -11,7 +11,7 @@ export default function Main() {
         <Route path="/projects/:projectName" component={ProjectDetails}/>
       </Switch> */}
       <ProjectDetails/>
-      {/* <Home/> */}
+      <Home/>
     </main>
   );
 }
